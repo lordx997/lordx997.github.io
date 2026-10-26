@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1715">
+<meta name="description" content="lordx997 — Roblox Luau scripter. Explore Aster Archery, a playable archery system with ballistic arrows, trajectory preview, and server-side scoring.">
+<meta property="og:title" content="lordx997 — Roblox Scripter"><meta property="og:description" content="Gameplay you can try. Code you can explore.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://lordx997.github.io/"><meta property="og:image" content="https://lordx997.github.io/archery-gameplay.png">
+<title>lordx997 — Roblox Scripter</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar wrap">
+<a class="brand" href="#home" aria-label="lordx997 home"><span class="brand-mark">L<span>↗</span></span><span>lordx997<small>ROBLOX SCRIPTER</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button>
+<nav id="nav" aria-label="Main navigation"><a href="#work">Selected work</a><a href="#systems">Under the hood</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk <span>↗</span></a></nav>
+</header>
+<main id="main">
+<section class="hero wrap" id="home">
+<div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> LUAU / ROBLOX STUDIO</p>
+<h1>Good gameplay.<br><span>From the inside out.</span></h1>
+<p class="intro">I’m <strong>lordx997</strong>. I build Roblox gameplay systems with responsive controls, clear feedback, and logic that lives where it belongs.</p>
+<div class="actions"><a class="button primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="https://github.com/lordx997" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+<div class="hero-note"><span>01</span><p>A playable demo.<br>Open code. Real mechanics.</p></div></div>
+<a class="hero-art" href="#work" aria-label="Explore the Aster Archery project">
+<div class="art-grid" aria-hidden="true"></div>
+<div class="target" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span class="target-cross"></span></div>
+<svg class="flight-path" viewBox="0 0 540 500" aria-hidden="true"><path d="M24 430 Q115 73 376 208" fill="none" stroke="#92e9c5" stroke-width="1.5" stroke-dasharray="3 8"/><circle cx="24" cy="430" r="4" fill="#92e9c5"/><path d="M351 190 L380 210 L345 213 L353 203Z" fill="#d9f7b9"/></svg>
+<div class="art-label art-label-top"><span class="status-dot"></span> ASTER / ARCHERY</div>
+<div class="art-coordinates"><span>X 00.00</span><span>Y 01.00</span><span>Z −1.00</span></div>
+<div class="art-label art-label-bottom"><span>CHARGE. AIM. RELEASE.</span><b>↗</b></div>
+</a></section>
+<div class="expertise-strip"><div class="wrap"><span>Built in Luau</span><i>+</i><span>Server-side validation</span><i>+</i><span>Player feedback</span><i>+</i><span>Playable on Roblox</span></div></div>
+<section class="work section wrap" id="work">
+<div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Take your <em>best shot.</em></h2></div><p>Aster Archery brings a complete bow-and-arrow loop into a focused Roblox practice range.</p></div>
+<article class="project">
+<a class="project-image" href="https://www.roblox.com/games/99096317171888" target="_blank" rel="noopener noreferrer" aria-label="Play Aster Archery on Roblox">
+<img src="archery-gameplay.png" width="1030" height="716" alt="Aster Archery gameplay: a fully drawn bow, curved aiming guide, mint HUD, and targets across an outdoor practice range.">
+<span class="image-badge"><span class="status-dot"></span> PLAYABLE DEMO</span><span class="image-link">Enter the range <b>↗</b></span></a>
+<div class="project-detail"><div><p class="eyebrow">FEATURED PROJECT / 2026</p><h3>Aster Archery</h3><p>Draw the bow, follow the trajectory, and land your shot. Arrows stay where they hit—even on moving targets. Practice freely or start a timed challenge.</p><div class="tags"><span>Luau</span><span>Physics</span><span>CFrame</span><span>Client / server</span></div></div>
+<div class="project-actions"><a class="button primary" href="https://www.roblox.com/games/99096317171888" target="_blank" rel="noopener noreferrer">Play on Roblox <span>↗</span></a><a class="button secondary" href="https://github.com/lordx997/aster-archery-demo/blob/main/ArcheryServer.server.luau" target="_blank" rel="noopener noreferrer">Read the Luau code <span>↗</span></a></div></div>
+</article>
+<div class="mechanics"><div><span class="number">01</span><h4>Aim with feedback</h4><p>Charge power and a curved flight preview make every shot readable before release.</p></div><div><span class="number">02</span><h4>Make the hit count</h4><p>Raycast impacts, target scoring, and attached arrows connect the shot to its result.</p></div><div><span class="number">03</span><h4>Keep the loop moving</h4><p>A reusable arrow pool, score tracking, and timed challenges support repeat play.</p></div></div>
+</section>
+<section class="systems section" id="systems"><div class="wrap">
+<div class="section-heading"><div><p class="eyebrow">02 / UNDER THE HOOD</p><h2>The feel is local.<br><em>The rules are server-side.</em></h2></div><p>A clear division of responsibility keeps the controls responsive and the score tied to validated shots.</p></div>
+<div class="system-layout"><div class="system-flow">
+<div class="flow-step"><span class="step-symbol">⌁</span><div><small>CLIENT</small><h3>Input & presentation</h3><p>Bow controls, trajectory preview, HUD updates, and hit feedback.</p><a href="https://github.com/lordx997/aster-archery-demo/blob/main/ArcheryClient.client.luau" target="_blank" rel="noopener noreferrer">Explore client script ↗</a></div></div>
+<div class="connection"><span>RemoteEvents</span><span>↓ REQUEST / ↑ STATE</span></div>
+<div class="flow-step"><span class="step-symbol">{ }</span><div><small>SERVER</small><h3>Simulation & scoring</h3><p>Charge checks, arrow movement, collision detection, and challenge state.</p><a href="https://github.com/lordx997/aster-archery-demo/blob/main/ArcheryServer.server.luau" target="_blank" rel="noopener noreferrer">Explore server script ↗</a></div></div>
+</div>
+<div class="code-panel"><div class="code-title"><span><i></i><i></i><i></i></span><span>ArcheryServer.server.luau</span></div><div class="code-content"><p class="code-caption">A small detail that matters</p>
+<pre><code><span class="code-comment">-- Return each arrow to the pool only once.</span>
+<span class="code-keyword">if</span> Self.Released <span class="code-keyword">then</span>
+    <span class="code-keyword">return</span>
+<span class="code-keyword">end</span>
+Self.Released = <span class="code-keyword">true</span>
+Self.Model.Shaft.FlightTrail.Enabled = <span class="code-keyword">false</span></code></pre>
+<p>Reusing arrow models avoids rebuilding them for every shot. A release guard prevents the same arrow from entering the pool twice.</p>
+<a class="text-link" href="https://github.com/lordx997/aster-archery-demo/blob/main/ArcheryServer.server.luau" target="_blank" rel="noopener noreferrer">See the full implementation <span>↗</span></a></div><div class="code-footer"><span>LUAU</span><span>READABLE BY DESIGN</span></div></div></div>
+</div></section>
+<section class="about section wrap" id="about">
+<div class="about-identity"><p class="eyebrow">03 / THE PERSON BEHIND THE CODE</p><div class="monogram" aria-hidden="true">L<span>↗</span></div><h2>lordx997</h2><p>On Roblox as <a href="https://www.roblox.com/users/5675716027/profile" target="_blank" rel="noopener noreferrer">TheRealRacion ↗</a></p></div>
+<div class="about-copy"><h3>Small details.<br><em>Better play.</em></h3><p>My focus is Roblox gameplay scripting: connecting the player’s input to systems that feel clear and satisfying to use.</p><p>This portfolio starts with Aster Archery. You can try the mechanics in the live experience and inspect the Luau scripts alongside it.</p><dl><div><dt>LANGUAGE</dt><dd>Luau</dd></div><div><dt>WORKSPACE</dt><dd>Roblox Studio</dd></div><div><dt>FOCUS</dt><dd>Gameplay · physics · UI feedback</dd></div></dl></div>
+</section>
+<section class="contact" id="contact"><div class="wrap contact-layout"><div><p class="eyebrow">04 / LET’S CONNECT</p><h2>Have something<br><em>in mind?</em></h2><p>Find me on Discord to talk about your Roblox project.</p></div>
+<div class="contact-card"><span class="contact-label">DISCORD USERNAME</span><strong>lordx997</strong><button class="button primary" id="copy-discord" type="button">Copy username <span aria-hidden="true">↗</span></button><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p><div class="contact-links"><a href="https://github.com/lordx997" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.roblox.com/users/5675716027/profile" target="_blank" rel="noopener noreferrer">Roblox ↗</a></div></div></div></section>
+</main>
+<footer class="wrap footer"><a class="brand" href="#home">lordx997<span>↗</span></a><span>© <span id="year">2026</span> · BUILT FOR PLAY</span><a href="#home">Back to top ↑</a></footer>
+</body></html>
