@@ -1,15 +1,20 @@
-# lordx997 — Roblox Scripter
+# lordx997 — Roblox scripting portfolio
 
-Personal portfolio featuring Aster Archery and its Luau source.
+Live site: https://lordx997.github.io/
 
-- Website: https://lordx997.github.io/
-- Demo: https://www.roblox.com/games/99096317171888
-- Code: https://github.com/lordx997/aster-archery-demo/blob/main/ArcheryServer.server.luau
-- Roblox: TheRealRacion
-- Discord: lordx997
+Static GitHub Pages website with Portfolio, Reviews, and Games tabs. No build step.
 
-## Editing
+## Updating content
 
-Static HTML, CSS, and JavaScript. No build step. Edit index.html for content, style.css for layout, and script.js for the mobile menu and Discord copy button. The gameplay image is a real screenshot of the demo. The target illustration is CSS and SVG.
+Edit `content.js`:
+- `systems`: name, description, tags, video path, poster path, videoNote, direct GitHub code link, Roblox game link.
+- `games`: name, description, thumbnail path, status (`Active` or `Coming soon`), visits (number, or null if unavailable), Roblox URL, role.
+- `reviews`: screenshot path in `image`, accessible transcription in `alt`, project/client credit in `caption`. Only publish genuine screenshots with permission and remove private details.
 
-GitHub Pages serves the root of the main branch. Asset paths are relative. Google Fonts are optional; system fonts are used if they cannot load.
+Place media files next to index.html and upload the changed files to main. Do not use placeholder projects or reviews as real credits.
+
+Search matches names, descriptions, and tags, including #Physics syntax. Tag chips filter the results. Tabs support arrow keys, Home/End, and hash URLs (#portfolio, #reviews, #games).
+
+The archery preview is a silent 13-second excerpt from the supplied October 2026 prototype recording. The current demo includes later improvements. Games uses Roblox's current published thumbnail. Visit counts are dated snapshots; update both the count in content.js and the checked date in index.html when refreshing them.
+
+Preview locally with any static HTTP server. GitHub Pages publishes from main / root.
